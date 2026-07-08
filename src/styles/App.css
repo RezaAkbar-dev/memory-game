@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0 !important;
+    /* padding: 0 !important; */
+}
+
+.game-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-align: center;
+    /* background-color: #f0f4f8; */
+    min-height: 100vh;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    color: #ffffff;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.3), /* Hitam agak transparan di bagian atas */
+        rgba(0, 0, 0, 0.8)
+    ), url(../assets/test.jpg);
+    gap: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.current-score {
+    font-weight: bold;
+    color: #333;
+}
+
+.high-score {
+    font-weight: bold;
+    color: #153da8;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+}
+
+.card {
+    border: 2px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transform: all 0.25s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.card p {
+    color: #4a5568;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #3b82f6;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(25, 153, 212, 0.904);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    height: 200px;
+}
+
+.header h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+main {
+    flex: 1;
+    border: 2px solid #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
